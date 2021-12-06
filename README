@@ -1,0 +1,23 @@
+项目名称： whiteMan
+项目目的：解决自动化获取系统发行版样本的问题
+镜像地址：
+	https:hub.docker.com（官方）
+	https://segmentfault.com/a/1190000023117518（国内镜像地址）
+组成模块：
+	1. docker
+		1. scripts：负责整个脚本编译、运作
+		2. repos：一份需要获取的系统列表（从官方获取或者国内镜像）
+		3. filestypes：支持的文件类型
+	2. docs
+		1. 项目架构、帮助文档
+	3. samples
+		1. white-samples：存放白样本的目录
+
+项目介绍：
+	这是一个自动化，从指定系统版本中，获取系统文件的docker自动化系统，
+	他通过拉取repos中指定的系统版本镜像，编译镜像脚本，自动化执行scirpts
+	目录的脚本，将filetypes中指定的文件类型拷贝到samples/white-samples
+	目录中，然后循环继续拉取repos指定的系统镜像.
+	最终直到repos无系统版本镜像，结束。
+	该系统能够及时、迅速、高自动化、低成本、高扩展的获取操作系统的白
+	样本文件。
