@@ -1,4 +1,4 @@
-ELF
-	executable
-	locateable
+[ELF]
+executable
+locateable
 
