@@ -1,9 +1,8 @@
 # autogenerate Dockfile
 
-docker_run := ./scripts/run.sh
-docker_file := ./scripts/docker/Dockerfile
-repos := ./repos/repo.list
-sh := bash
+docker_run := ./scripts/run.py
+global_config := ./scripts/config.json
+python := /bin/python
 
 start:
-	$(sh) $(docker_run) $(repos) $(docker_file)
+	$(python) $(docker_run) --config $(global_config)

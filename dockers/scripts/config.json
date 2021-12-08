@@ -1,0 +1,22 @@
+{
+  "repos": "../repos/repo.json",
+  "mode": "component",
+  "dockerfile": "./docker/Dockerfile",
+  "template": "./template/Dockerfile",
+  "share": "./share",
+  "share2": "/mnt",
+  "build_url": {
+    "baidu": "dockerpracticesig/buildkit:master",
+    "tencent": "dockerpracticesig/buildkit:master-tencent"
+  },
+  "application": {
+    "ubuntu": {
+      "version": {
+
+      }
+    },
+    "centos": {
+
+    }
+  }
+}

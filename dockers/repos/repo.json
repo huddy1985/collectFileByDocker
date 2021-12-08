@@ -1,0 +1,22 @@
+{
+    "ubuntu": {
+        "x86": {
+            "ubuntu:22.04": "no",
+            "ubuntu:21.10": "no",
+            "ubuntu:21.04": "no",
+            "ubuntu:20.04": "no",
+            "ubuntu:18.04": "no",
+            "ubuntu:16.04": "no",
+            "ubuntu:14.04": "no"
+        },
+		"arm": {
+
+		}
+    },
+    "centos": {
+    
+    },
+    "fedora": {
+    
+    }
+}
