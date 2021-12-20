@@ -25,7 +25,7 @@ def generate_dockerfile(_config, lsb, repo):
 
 
 def docker_init(_config):
-    image = _config['build_url']['build_url']
+    image = _config['build_url']['baidu']
     cmds = ['docker', 'buildx', 'create', '--driver', 'docker-container', '--driver-pot', 'image={}'.format(image)]
     subprocess.Popen(cmds)
 
